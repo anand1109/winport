@@ -1,0 +1,24 @@
+
+.side-row{
+    width: 15rem;
+    position: fixed;
+    top: 23rem;
+    margin-left: 10px;
+}
+
+
+
+
+footer{
+    height: 60px;
+}
+
+
+/*-----below-576-screen---*/
+
+@media (max-width: 575px) {
+    .box-row{
+        flex-flow: initial;
+    }
+
+}
