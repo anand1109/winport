@@ -18,20 +18,21 @@
 </head>
 <body>
 
-<div class="content" style="height: 95vh">
+<div class="content m-auto" style="height: 95vh">
     <div class="wrapper-content d-flex d-sm-flex flex-column flex-sm-column h-100 align-items-center justify-content-center text-center">
        <div class="row box-row">
-           <div class="col-md-6 col-sm-6">
-               <div class="card" style="width: 10rem;height: 10rem">
-                   <div class="card-body">
-                       hello
+           <div class="col-md-6 col-sm-6 fa-guitar">
+               <div class="card custom-card1" onclick="aboutHideShow()">
+                   <div class="card-body " >
+                       <i class="fa fa-user-circle font-weight-bolder"aria-hidden="true"></i><br>
+                       <a class="mt-5" href="#">About Me</a>
                    </div>
                </div>
            </div>
-           <div class="col-md-6 col-sm-6">
-               <div class="card" style="width: 10rem;height: 10rem">
+           <div class="col-md-6 col-sm-6 fa-guitar">
+               <div class="card ml-sm-auto custom-card2">
                    <div class="card-body">
-                       hello
+                       <a href="">My Work</a>
                    </div>
                </div>
            </div>
@@ -40,17 +41,17 @@
         <!--second-row-->
         <div class="row box-row">
             <div class="col-md-6 col-sm-6 fa-guitar">
-                <div class="card"  style="width: 10rem;height: 10rem">
+                <div class="card custom-card3" onclick="skillHideShow()">
                     <div class="card-body">
-                        hello
+                        <a href="">Skills</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6 fa-guitar">
-                <div class="card" style="width: 10rem;height: 10rem">
-                    <div class="card-body pb-2">
+                <div class="card custom-card4" onclick="hideShow()">
+                    <div class="card-body pb-2" >
                         <i class="fa fa-graduation-cap"></i>
-                        <p class="lead mt-5">Learning</p>
+                        <a href="">Learning</a>
                     </div>
                 </div>
             </div>
@@ -59,19 +60,222 @@
 
 
     </div>
-    <div class="row side-row pb-5" style="transform: translate(-16rem)">
-        <div class="col-md-12 col-md-12">
-            <div class="card">
-                <div class="card-body" style="width: 15rem; height:20rem"></div>
+
+</div>
+
+
+
+
+
+<!--------------------About-Page------------------------>
+
+
+<div id="about">
+    <!--<div class="about-header">
+        <h1 class="about-h1-tag">About Me</h1>
+        <a href="#parent-div" class="about-to-home"></a>
+    </div>-->
+
+    <div class="AboutIndexHeader">
+        <h1 class="clasicAboutHeader">About Me</h1>
+        <div class="About-header mt-0">
+            <h1 class="pt-1">About Me</h1>
+            <a href="#parent-div" class="about-to-home"></a>
+        </div>
+    </div>
+
+    <div class="a-grid-container">
+        <div class="img-grid-list-1">
+            <img class="about-img" src="assets/anand.jpg" alt="">
+            <h2 class="h2Title">Hello, I'm <span>Anand</span></h2>
+            <p class="title">A software developer, front-end enthusiast.</p>
+            <p class="description">
+                I'm a full time software developer who has a one sided love for visual and design. I enjoy developing visual-related stuffs, reading random tech blogs and getting inspired by the awesomeness.
+            </p>
+
+
+            <div class="justify">
+                <h1 class="title-2">SOME FACTS</h1>
+                <ul>
+                    <li>I was born on a wonderful day in 1998.</li>
+                    <li>I like things which I can see or feel, that's why I love writing codes because I can see it happening.</li>
+                    <li>Basically, I'm from a small town Gopalganj in Bihar, India</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, voluptatibus?</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, ex facilis fugit id libero modi officiis quae quas qui.</li>
+                </ul>
+
             </div>
+
+            <div class="justify-1">
+                <h1 class="title-2">SOME TRIVIAS</h1>
+                <ul>
+                    <li>I was born on a wonderful day in 1998.</li>
+                    <li>I like things which I can see or feel, that's why I love writing codes because I can see it happening.</li>
+                    <li>Basically, I'm from a small town Gopalganj in Bihar, India</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, voluptatibus?</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, ex facilis fugit id libero modi officiis quae quas qui.</li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <!--<footer class="aboutFooter">
+
+            <div> <h2 class="footerh2Tag"><i class="fas fa-address-card"></i>  About Me</h2>
+            </div>
+        </footer>-->
+    </div>
+
+
+
+</div>
+</div>
+
+
+
+
+<!--------------------------------Skill-Page-------------------------------->
+
+<div id="Skill-Page">
+    <!-----------------heading-1----------->
+    <div class="SkillIndexHeader">
+        <h1 class="clasicSkillHeader">Skills</h1>
+        <div class="Skill-header mt-0">
+            <h1 class="pt-1">Skills</h1>
+            <a href="#parent-div" class="switch-to-home"></a>
+        </div>
+    </div>
+    <!------------heading-2--------->
+    <div class="row mt-5">
+        <div class="col-md-12 col-sm-12 text-center mt-5">
+            <h5 class="display-5 webHeaderh5Tag">Web Development</h5>
+        </div>
+    </div>
+    
+    <!------------main-content------->
+    <div class="row ml-2 mr-2 mt-4">
+    <div class="col-sm-4 col-md-4 mt-4">
+        <img src="assets/html5.png" class="htmlImg" alt="">
+    </div>
+    <div class="col-sm-4  col-md-4 mt-4">
+        <img src="assets/css3.png" class="cssImg" alt="">
+    </div>
+    <div class="col-sm-4 col-md-4 mt-4">
+        <img src="assets/bootstrap4.jpeg" class="bootstrapImg" alt="">
+    </div>
+</div>
+
+    <!-----------row-2---------->
+    <div class="row ml-2 mr-2 mt-4">
+        <div class="col-sm-4 col-md-4 mt-3">
+            <img src="assets/html5.png" class="htmlImg" alt="">
+        </div>
+        <div class="col-sm-4  col-md-4 mt-4">
+            <img src="assets/css3.png" class="cssImg" alt="">
+        </div>
+        <div class="col-sm-4 col-md-4 mt-4">
+            <img src="assets/bootstrap4.jpeg" class="bootstrapImg" alt="">
+        </div>
+    </div>
+
+
+    <!--------------------heading-3----------->
+    <div class="row mt-5">
+        <div class="col-md-12 col-sm-12 text-center mt-4">
+            <h5 class="display-5 webHeaderh5Tag">Tools</h5>
+        </div>
+    </div>
+
+
+    <!-----------row-3---------->
+    <div class="row ml-2 mr-2 mt-4 mb-5">
+        <div class="col-sm-4 col-md-4 mt-4">
+            <img src="assets/html5.png" class="htmlImg" alt="">
+        </div>
+        <div class="col-sm-4  col-md-4 mt-4">
+            <img src="assets/css3.png" class="cssImg" alt="">
+        </div>
+        <div class="col-sm-4 col-md-4 mt-4">
+            <img src="assets/bootstrap4.jpeg" class="bootstrapImg" alt="">
+        </div>
+    </div>
+
+    <!-----------row-4---------->
+    <div class="row ml-2 mr-2 mt-1">
+        <div class="col-sm-4 col-md-4 mt-4">
+            <img src="assets/html5.png" class="htmlImg" alt="">
+        </div>
+        <div class="col-sm-4  col-md-4 mt-4">
+            <img src="assets/css3.png" class="cssImg" alt="">
+        </div>
+        <div class="col-sm-4 col-md-4 mt-4">
+            <img src="assets/bootstrap4.jpeg" class="bootstrapImg" alt="">
+        </div>
+    </div>
+
+
+</div>
+
+<!--------------------------------Learning-page------------------------------>
+
+<div id="learning">
+    <div class="learningIndexHeader">
+        <h1 class="clasicTheme">Learning</h1>
+        <div class="Learning-header mt-0">
+            <h1 class="pt-1">Learning</h1>
+            <a href="#parent-div" class="Learnswitch-to-home"></a>
+        </div>
+    </div>
+
+
+    <div class="grid-container mt-5">
+        <div class="Learning-grid-list1">
+            <i class="fas fa-user-graduate circle"></i>
+            <h5 class="vr-line1"></h5>
+            <i class="fa fa-certificate certCircle" aria-hidden="true"></i>
+            <h5 class="vr-line2"></h5>
+            <i class="fa fa-laptop lapCircle" aria-hidden="true"></i>
+            <h5 class="vr-line3"></h5>
+
+        </div>
+        <div class="Learning-grid-list2">
+            <h5 class="session-16-20">2016-2020</h5>
+            <h2 class="degree-name">Computer Science <br> Engineering</h2>
+            <h2 class="college-name">A.K.T.U</h2>
+            <h2 class="degree-holder-name">Bachelor of Technology</h2>
+            <h5 class="session-20">2020</h5>
+            <h2 class="Js-cert">JavaScript <br> Certifications</h2>
+            <h2 class="Training-institution">I.T.M Edutech Training Pvt. Ltd.(N.S.D.C)</h2>
+            <h2 class="Training-completion">A qualified examination certificate <br> issued by LET'S UPGRADE</h2>
+            <h5 class="session-2k-20">2020</h5>
+            <h2 class="ui-tech">Ui Technologies</h2>
+            <h2 class="UiBrains-Company">UiBrains Technology </h2>
+            <h2 class="ui-trainer">Trained by Naveen Saggam</h2>
+            <h5 class="session-future">2020-future</h5>
+            <h2 class="Wrk-exp">Working Experience</h2>
+            <h2 class="Wrk-future">Continuous skills development and advancement from self-learning and actual works</h2>
         </div>
     </div>
 
 
 
-
 </div>
-<footer class="bg-dark w-100 mt-2" style="position: relative">
+
+
+<!----------------------------------footer-------------------------------------------->
+<footer>
+    <div class="row side-row pb-5" style="transform: translate(-16rem)">
+        <div class="col-md-12 col-md-12">
+            <div class="card side-card pt-1 ">
+                <img  src="assets/theme-flat.jpeg" height="80px" width="120px" style="margin: auto" class="text-center flatTheme" alt="">
+                <img src="assets/neumorph-img1.jpeg" height="80px" width="120px" style="margin: auto" class="text-center pt-1 neumorphismTheme" onclick="neomorphismMode()" alt="">
+                <img src="assets/theme-clasic.jpeg" height="80px" width="120px" style="margin: auto" class="text-center pt-1 classicTheme" onclick="clssicMode()" alt="">
+                <div class="card-body"></div>
+            </div>
+        </div>
+    </div>
 
     <img class="ml-3 mt-2 rotation-btn" src="assets/settingMove.png" style="transform: rotate(0deg);transition: all 1s ease-in; height:3rem; width:3rem;  border-radius: 50%"onclick="rotation()" alt="">
 </footer>
