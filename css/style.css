@@ -4,14 +4,100 @@
     margin: 0px;
 
 }
-.content{
-    display: block;
-    background-color:rgb(122,194,185);
+.footerh2Tag{
+    width: 148px;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    position: relative;
+    text-align: center;
+    background-color: seagreen;
+    margin-left: 70px;
+    margin-top: 4px;
+    margin-top: -48px;
+    border-radius: 12px;
+    box-shadow: inset -3px -3px 5px #ffffff60, inset 3px 3px 15px #00000090;
+    border: 3px solid seagreen;
+    display: none;
 }
 
-.fa-graduation-cap,.fa-user-circle {
+.socialIcon1{
+    position: fixed;
+    height: 26px;
+    width: 26px;
+    margin-top: -37px;
+    background: red;
+    right: 10px
+}
+.socialIcon2{
+    position: fixed;
+    height: 26px;
+    width: 26px;
+    margin-top: -37px;
+    background: yellow;
+    right: 10px
+}
+
+.socialIcon2{
+    position: fixed;
+    height: 26px;
+    width: 26px;
+    margin-top: -72px;
+    background: yellow;
+    right: 10px
+}
+.socialIcon3{
+    position: fixed;
+    height: 26px;
+    width: 26px;
+    margin-top: -107px;
+    background: blue;
+    right: 10px
+}
+.socialIcon4{
+    position: fixed;
+    height: 26px;
+    width: 26px;
+    margin-top: -141px;
+    background: green;
+    right: 10px
+}
+.socialIcon5{
+    position: fixed;
+    height: 26px;
+    width: 26px;
+    margin-top: -176px;
+    background: black;
+    right: 10px
+}
+.content{
+    background-color:rgb(122,194,185);
+}
+.closeIcon1, .closeIcon2, .closeIcon3, .closeIcon4{
+    position: absolute;
+    font-size: 25px;
+    right: 11px;
+    top: 8px;
+}
+
+.fa-user-graduates{
     font-size: 60px;
     text-align: center;
+    display: block;
+}
+.fa-user-circle {
+    font-size: 60px;
+    text-align: center;
+}
+.fa-brief{
+    font-size: 60px;
+    text-align: center;
+    display: block;
+}
+.fa-book-reader{
+    font-size: 60px;
+    text-align: center;
+    display: block;
 }
 a{
     color: black;
@@ -103,7 +189,7 @@ span{
     text-align: justify;
     padding-left: 30px;
     margin-top: 30px;
-    padding-bottom: 200px;
+    padding-bottom: 132px;
 }
 
 .title-2{
@@ -126,6 +212,104 @@ li{
 
 
 
+/*-------------------------------My-Work-----------------------------*/
+#work-page{
+    display: none;
+}
+
+
+.WorkIndexHeader{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 2.9rem;
+    background-color: white;
+}
+.Work-header{
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    padding-bottom: inherit;
+}
+
+.neuFolder1, .neuFolder2, .neuFolder3, .neuFolder4, .neuFolder5, .neuFolder6,
+.classicFolder1,.classicFolder2, .classicFolder3, .classicFolder4, .classicFolder5, .classicFolder6,
+.flatFolder1,.flatFolder2, .flatFolder3, .flatFolder4, .flatFolder5, .flatFolder6{
+    width: 90px;
+    height: 90px;
+    padding: 13px;
+    margin: auto;
+}
+.switchWork-to-home, .flatabout-to-home, .flatswitchWork-to-home{
+    position: fixed;
+    right: 10px;
+    top: 12px;
+}
+
+/*-----------work-page-subfolder----------------*/
+.work-page-content{
+    display: block;
+}
+.container1{
+    display: none;
+}
+.covidHeader{
+    display: inline-grid;
+}
+.fa-arrow-left{
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    font-size: 25px;
+
+}
+
+
+/*------------------work-page-subfolder-2-------------------*/
+.container2{
+    display: none;
+}
+
+.githubHeader{
+    display: inline-grid;
+    font-weight: 300 !important;
+}
+
+
+/*----------------------work-page-subfolder-3-------------------*/
+.container3{
+    display: none;
+}
+.winportHeader{
+    display: inline-grid;
+}
+
+/*----------------------work-page-subfolder-4-------------------*/
+.container4{
+    display: none;
+}
+.TaxmannHeader{
+    display: inline-grid;
+}
+
+/*------------------------work-page-sub-folder-5--------------*/
+.container5{
+    display: none;
+}
+.EmployeePortalHeader{
+    display: inline-grid;
+}
+
+
+/*------------------------work-page-sub-folder-6--------------*/
+.container6{
+    display: none;
+}
+.PortfolioHeader{
+    display: inline-grid;
+}
 
 
 /*--------------------------------skill-page---------------------------------*/
@@ -143,7 +327,7 @@ li{
     background-color: white;
 }
 
-.switch-to-home{
+.switch-to-home, .skillflatswitch-to-home{
     position: fixed;
     top: 10px;
     right: 12px;
@@ -162,22 +346,62 @@ li{
     font-family: system-ui;
     font-weight: 400;
 }
-.htmlImg, .cssImg, .bootstrapImg{
+.htmlImg, .cssImg, .bootstrapImg,.bootsclassicimg,.cssclassicimg, .htmlclassicimg,
+.ES5classic,.ES6classic,.reactclassic,
+.gitbashclassic,.npmclassic,.webstormclassic, .githubclassic, .msoffceclassic,
+.webstormneu,.webstormflat,.webstormneu1,.gitbashneu,.npmneu,
+.vscodeClassic, .ES5neu, .ES6neu,.ES6neu1, .reactimgneu,
+.githubneu,.msofficeneu, .vscodenue, .vscodeflat,.vscodenue1{
     width: 60px;
     height: 60px;
     padding: 13px;
     border-radius: 50%;
 }
-.htmlImg{
+.htmlImg,.htmlclassicimg,.ES5classic,.ES6classic,.reactclassic{
     border: 4px solid sandybrown;
 }
-.cssImg{
+.cssImg, .cssclassicimg{
     border: 4px solid blue;
 }
-.bootstrapImg{
+.bootstrapImg, .bootsclassicimg{
     border: 4px solid slateblue;
 }
 
+.ES5classic, .ES5neu{
+    border: 4px solid rgb(214,186,50);
+}
+.ES6classic{
+    padding: 5px;
+    padding-left: 10px;
+    border: 4px solid rgb(214,186,50);
+}
+.ES6neu,.ES6neu1{
+    border: 4px solid rgb(214,186,50) ;
+}
+.reactclassic, .reactimgneu{
+    padding: 0px;
+    border: 4px solid rgb(78,188,217);
+}
+
+.gitbashclassic, .gitbashneu{
+    border: 4px solid rgb(237,83,54);
+}
+.npmclassic,.npmneu{
+    border: 4px solid rgb(195,1,1);
+}
+.webstormclassic, .webstormneu,.webstormflat,.webstormneu1{
+    border: 4px solid rgb(18,207,215);
+    padding: 6px;
+}
+.msoffceclassic,.msofficeneu{
+    border: 4px solid rgb(133,29,8);
+}
+.vscodeClassic,.vscodenue, .vscodeflat,.vscodenue1{
+  border: 4px solid rgb(0,133,204);
+}
+.githubclassic,.githubneu{
+    border: 4px solid black;
+}
 
 /*-----------learning-page---------------*/
 #learning{
@@ -202,7 +426,7 @@ li{
 
 }
 
-.Learnswitch-to-home{
+.Learnswitch-to-home, .LearnFlat-to-home{
     position: fixed;
     right: 10px;
     top: 12px;
@@ -224,17 +448,20 @@ h1{
 .Learning-grid-list1{
     text-align: center;
 }
-.circle ,.certCircle, .lapCircle{
+.circle ,.certCircle, .lapCircle, .brfCircle{
     height: 40px;
     width: 40px;
     border-radius: 50px;
     padding-top: 10px;
 }
-.vr-line1, .vr-line2, .vr-line3{
+.vr-line1, .vr-line2, .vr-line3, .vr-line4{
     height: 175px;
     border: 3px solid black;
     width: 0px;
     margin: auto;
+}
+.vr-line4{
+    height: 146px;
 }
 
 .session-16-20{
@@ -260,7 +487,7 @@ h1{
 .session-future{
     width: 90px;
     margin-left: 10px;
-    margin-top: 78px;
+    margin-top: 102px;
     padding: 4px;
     text-align: center;
     font-weight: 500;
@@ -328,12 +555,12 @@ h1{
 
 
 footer{
-    background-color: rgb(144,214,205);
     height: 60px;
     width: 100%;
     z-index: 1;
     position: fixed;
     bottom: 0px;
+    border-top: 3px solid black;
 
 }
 
@@ -349,7 +576,13 @@ footer{
         width: 9rem;
         height: 8rem;
     }
+    .fa-user-circle, .fa-user-graduate,.fa-book-reader,.fa-brief{
+        padding-bottom: 14px;
+    }
 
+    .description, li{
+        font-size: 14px;
+    }
 
     .side-card{
         width: 150px;
@@ -366,7 +599,11 @@ footer{
     .col-sm-4{
         display: contents;
     }
-    .htmlImg, .cssImg, .bootstrapImg{
+    .htmlImg, .cssImg, .bootstrapImg,.htmlclassicimg,.cssclassicimg,.bootsclassicimg,
+    .ES5classic,.ES6classic,.reactclassic,
+    .gitbashclassic,.npmclassic,.webstormclassic, .msoffceclassic, .githubclassic,
+    .vscodeClassic, .ES5neu, .ES6neu,.ES6neu1, .reactimgneu,.webstormneu,.webstormflat,.webstormneu1,.gitbashneu,.npmneu,
+    .githubneu,.msofficeneu, .vscodenue, .vscodeflat,.vscodenue1{
         margin: auto;
     }
 }
@@ -390,8 +627,8 @@ footer{
     }
 
     .side-row{
-        position: fixed;
-        top: 20rem;
+        position: absolute;
+        top: -17rem;
         margin-left: 10px;
         margin-bottom: 50px;
     }
@@ -410,9 +647,19 @@ footer{
         height: 7rem;
     }
 
+    .fa-user-circle,.fa-user-graduate,.fa-brief, .fa-book-reader{
+        padding-bottom: 1px;
+    }
     .side-card{
         width: 130px;
         height: 250px;
+    }
+
+    .side-row{
+        position: absolute;
+        top: -17rem;
+        margin-left: 10px;
+        margin-bottom: 50px;
     }
 
 }

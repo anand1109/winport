@@ -13,26 +13,28 @@
 
     <!--css-file----->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <title>Winport</title>
 </head>
 <body>
 
-<div class="content m-auto" style="height: 95vh">
+<div class="content m-auto" style="height: 95vh; display: block">
     <div class="wrapper-content d-flex d-sm-flex flex-column flex-sm-column h-100 align-items-center justify-content-center text-center">
        <div class="row box-row">
-           <div class="col-md-6 col-sm-6 fa-guitar">
+           <div class="col-md-6 col-sm-6 pb-2 pr-1 ">
                <div class="card custom-card1" onclick="aboutHideShow()">
                    <div class="card-body " >
-                       <i class="fa fa-user-circle font-weight-bolder"aria-hidden="true"></i><br>
-                       <a class="mt-5" href="#">About Me</a>
+                       <i class="fa fa-user-circle font-weight-bolder mb-1"aria-hidden="true"></i><br>
+                       <a class="mt-5 a1bg" href="#">About Me</a>
                    </div>
                </div>
            </div>
-           <div class="col-md-6 col-sm-6 fa-guitar">
-               <div class="card ml-sm-auto custom-card2">
+           <div class="col-md-6 col-sm-6 pl-1 ">
+               <div class="card ml-sm-auto custom-card2" onclick="workHideShow()">
                    <div class="card-body">
-                       <a href="">My Work</a>
+                       <i class="fas fa-briefcase fa-brief mb-1" aria-hidden="true"></i>
+                       <a href="#" class="a2bg">My Work</a>
                    </div>
                </div>
            </div>
@@ -40,18 +42,19 @@
 
         <!--second-row-->
         <div class="row box-row">
-            <div class="col-md-6 col-sm-6 fa-guitar">
+            <div class="col-md-6 col-sm-6 pr-1 ">
                 <div class="card custom-card3" onclick="skillHideShow()">
-                    <div class="card-body">
-                        <a href="">Skills</a>
+                    <div class="card-body pb-2">
+                        <i class="fas fa-book-reader mb-1" aria-hidden="true"></i>
+                        <a href="#" class="mt-5 a3bg">Skills</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 fa-guitar">
-                <div class="card custom-card4" onclick="hideShow()">
+            <div class="col-md-6 col-sm-6 pl-1" onclick="hideShow()">
+                <div class="card custom-card4" >
                     <div class="card-body pb-2" >
-                        <i class="fa fa-graduation-cap"></i>
-                        <a href="">Learning</a>
+                        <i class="fas fa-user-graduate fa-user-graduates mb-1" aria-hidden="true"></i>
+                        <a href="#" class="mt-5 a4bg">Learning</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +73,7 @@
 <!--------------------About-Page------------------------>
 
 
-<div id="about">
+<div id="about" class="animated zoomIn" style="display: none">
     <!--<div class="about-header">
         <h1 class="about-h1-tag">About Me</h1>
         <a href="#parent-div" class="about-to-home"></a>
@@ -80,13 +83,16 @@
         <h1 class="clasicAboutHeader">About Me</h1>
         <div class="About-header mt-0">
             <h1 class="pt-1">About Me</h1>
-            <a href="#parent-div" class="about-to-home"></a>
+            <a href="#parent-div" class="about-to-home" onclick="aboutToHome()"></a>
         </div>
+        <i class="fas fa-times closeIcon1" onclick="aboutToHome()"></i>
+        <a href="#parent-div" class="flatabout-to-home" onclick="aboutToHome()"></a>
     </div>
 
     <div class="a-grid-container">
         <div class="img-grid-list-1">
-            <img class="about-img" src="assets/anand.jpg" alt="">
+            <img class="about-img animated fadeIn" src="assets/anand.jpg" alt="">
+            <div class="aboutFlatBg mb-5 animated slideInUp">
             <h2 class="h2Title">Hello, I'm <span>Anand</span></h2>
             <p class="title">A software developer, front-end enthusiast.</p>
             <p class="description">
@@ -94,7 +100,7 @@
             </p>
 
 
-            <div class="justify">
+            <div class="justify ">
                 <h1 class="title-2">SOME FACTS</h1>
                 <ul>
                     <li>I was born on a wonderful day in 1998.</li>
@@ -117,6 +123,7 @@
                 </ul>
 
             </div>
+            </div>
 
 
         </div>
@@ -134,23 +141,240 @@
 </div>
 
 
+<!------------------------------Work-Page--------------------------->
+
+<div id="work-page" class="animated zoomIn" style="display: none">
+    <div class="WorkIndexHeader">
+        <h1 class="clasicWorkHeader">My Work</h1>
+        <div class="Work-header mt-0">
+            <h1 class="pt-1">My Work</h1>
+            <a href="#parent-div" class="switchWork-to-home" onclick="workToHome()"></a>
+        </div>
+        <i class="fas fa-times closeIcon2" onclick="workToHome()"></i>
+        <a href="#parent-div" class="flatswitchWork-to-home" onclick="workToHome()"></a>
+    </div>
+
+<!------------------------------main-page-content------------------->
+    <div class="work-page-content mt-0" style="display: block">
+    <div class="row mt-0">
+        <div class="col-sm-12 text-center mt-5 ">
+            <h1 class="display-5 mt-5">
+                My Projects
+            </h1>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-sm-4">
+            <img class="neuFolder1 covid-subFolder" src="assets/neuFolder.jpeg" width="80px" height="80px" onclick="workPageCovidHideShow()" alt="">
+            <img class="classicFolder1 covid-subFolder" src="assets/classicFolder.jpeg" width="80px" height="80px" onclick="workPageCovidHideShow()" alt="">
+            <img class="flatFolder1 covid-subFolder" src="assets/flatFolder.jpeg" width="80px" height="80px" onclick="workPageCovidHideShow()" alt="">
+        </div>
+        <div class="col-sm-4 colImg">
+            <img class="neuFolder2" src="assets/neuFolder.jpeg" width="80px" height="80px" onclick="workPageGithubHideShow()" alt="">
+            <img class="classicFolder2" src="assets/classicFolder.jpeg" width="80px" height="80px" onclick="workPageGithubHideShow()" alt="">
+            <img class="flatFolder2" src="assets/flatFolder.jpeg" width="80px" height="80px" onclick="workPageGithubHideShow()" alt="">
+        </div>
+        <div class="col-sm-4 colImg">
+           <img class="neuFolder3" src="assets/neuFolder.jpeg" width="80px" height="80px" onclick="winportToWorkPage()" alt="">
+           <img class="classicFolder3" src="assets/classicFolder.jpeg" width="80px" height="80px" onclick="winportToWorkPage()" alt="">
+           <img class="flatFolder3" src="assets/flatFolder.jpeg" width="80px" height="80px" onclick="winportToWorkPage()" alt="">
+        </div>
+    </div>
+
+    <!-------------------row-2--------------------->
+    <div class="row mt-4">
+        <div class="col-sm-4">
+            <img class="neuFolder4 " src="assets/neuFolder.jpeg" width="80px" height="80px" onclick="taxmannToWorkPage()" alt="">
+            <img class="classicFolder4 " src="assets/classicFolder.jpeg" width="80px" height="80px" onclick="taxmannToWorkPage()" alt="">
+            <img class="flatFolder4 " src="assets/flatFolder.jpeg" width="80px" height="80px" onclick="taxmannToWorkPage()" alt="">
+        </div>
+        <div class="col-sm-4 colImg">
+            <img class="neuFolder5" src="assets/neuFolder.jpeg" width="80px" height="80px" onclick="employeeToWorkPage()" alt="">
+            <img class="classicFolder5" src="assets/classicFolder.jpeg" width="80px" height="80px" onclick="employeeToWorkPage()" alt="">
+            <img class="flatFolder5" src="assets/flatFolder.jpeg" width="80px" height="80px" onclick="employeeToWorkPage()" alt="">
+        </div>
+        <div class="col-sm-4 colImg">
+            <img class="neuFolder6" src="assets/neuFolder.jpeg" width="80px" height="80px" onclick="portfolioToWorkPage()" alt="">
+            <img class="classicFolder6" src="assets/classicFolder.jpeg" width="80px" height="80px" onclick="portfolioToWorkPage()" alt="">
+            <img class="flatFolder6" src="assets/flatFolder.jpeg" width="80px" height="80px" onclick="portfolioToWorkPage()" alt="">
+        </div>
+    </div>
+    </div>
+
+    <!-------------------covid-19-project-subfolder-page---------------->
+    <div class="container1" style="display: none">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="display-5 mt-1 covidHeader mb-0">
+                    Covid-19 Tracker
+                </h1>
+                <i class="fa fa-arrow-left m-auto" onclick="workPageCovidHideShow()"></i>
+            </div>
+            <div class="col-sm-12 text-center mt-1">
+                <p class="lead text-dark" style="font-size: 14px">
+                    2020
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <p class="lead pl-3 pr-3 text-dark" style="text-align: justify; font-family: system-ui;font-size: 15px;font-weight: 400">A small website tracking the spread of the Coronavirus of India and Worldwide. Visits it's
+                <a href="https://github.com/anand1109/covid-19-tracker" style=" border-bottom: 3px solid rgb(29,155,114);">Web App Page</a>  </p>
+            <h6 class="pl-3 pr-3" style="text-align: justify; font-family: system-ui;font-size: 14px;font-weight: 400">Technology Stack: HTML5, CSS3, JAVASCRIPT & AJAX</h6>
+        </div>
+    </div>
+
+
+    <!-------------------Github-Profile-search-project-subfolder-page---------------->
+    <div class="container2 card" style="display: none">
+        <div class="row card-body">
+            <div class="col-sm-12 text-center">
+                <h1 class="display-6 mt-1 githubHeader mb-0">
+                    Github Profile <br> Search Web App
+                </h1>
+                <i class="fa fa-arrow-left m-auto" onclick="bactToWorkPage()"></i>
+            </div>
+            <div class="col-sm-12 text-center">
+                <p class="lead text-dark" style="font-size: 14px">
+                    2020-Present
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <p class="lead pl-3 pr-3 text-dark" style="text-align: justify; font-family: system-ui;font-size:15px;font-weight: 400">This project i picked after completing React Fundamental. This repo contains a project build with React in which users can search for a Github user and see information of their profile.  </p>
+            <h6 class="pl-3 pr-3" style="text-align: justify; font-family: system-ui;font-size: 14px;font-weight: 400">Technology Stack: HTML5, CSS3, Bootstrap4, JAVASCRIPT & REACT JS</h6>
+        </div>
+    </div>
+
+
+
+    <!-------------------Winport-project-subfolder-page---------------->
+    <div class="container3" style="display: none">
+        <div class="row ">
+            <div class="col-sm-12 text-center">
+                <h1 class="display-6 mt-1 winportHeader mb-0">
+                    Winport
+                </h1>
+                <i class="fa fa-arrow-left m-auto" onclick="winportToWorkPage()"></i>
+            </div>
+            <div class="col-sm-12 text-center mt-1">
+                <p class="lea text-dark" style="font-size: 14px">
+                    2021-Present
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <p class="lead pl-3 pr-3 text-dark" style="text-align: justify; font-family: system-ui;font-size: 15px;font-weight: 400">A window-styled, multi-theming portfolio
+                What you are viewing right now is my widows style portfolio. The core design is inspired by Microsoft's Windows. Feel free to check out the source code I made publicly available on Github, and do not hesitate to put a star if you like it.
+                </p>
+            <h6 class="pl-3 pr-3" style="text-align: justify; font-family: system-ui;font-size: 14px;font-weight: 400">Technology stacks : HTML5, CSS3, Bootstrap4 & JAVASCRIPT  </h6>
+        </div>
+    </div>
+
+
+    <!-------------------Taxmann-Bookstore-project-subfolder-page---------------->
+    <div class="container4" style="display: none">
+        <div class="row ">
+            <div class="col-sm-12 text-center">
+                <h1 class="display-6 mt-1 TaxmannHeader mb-0">
+                    Taxmann Bookstore
+                </h1>
+                <i class="fa fa-arrow-left m-auto" onclick="taxmannToWorkPage()"></i>
+            </div>
+            <div class="col-sm-12 text-center mt-0">
+                <p class="lead text-dark" style="font-size: 14px">
+                    2021
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <p class="lead pl-3 pr-3 text-dark" style="text-align: justify; font-family: system-ui;font-size: 15px;font-weight: 400">This is a Taxmann Bookstore a single static webpage this webpage i designed for the Sparklin Company. It's responsive design
+                the content adjust smoothly to various screen. Visits  <a href="https://anand1109.github.io/Ui-Task/" style="border-bottom: 3px solid rgb(29,155,114)">here.</a>
+            </p>
+            <h6 class="pl-3 pr-3" style="text-align: justify; font-family: system-ui;font-size: 14px;font-weight: 400">Technology stacks : HTML5, CSS3 & Bootstrap4 </h6>
+        </div>
+    </div>
+
+
+
+    <!-------------------Employee-portal-project-subfolder-page---------------->
+    <div class="container5" style="display: none">
+        <div class="row ">
+            <div class="col-sm-12 text-center">
+                <h1 class="display-6 mt-1 EmployeePortalHeader pr-3 mb-0">
+                    Number Guessing Game
+                </h1>
+                <i class="fa fa-arrow-left m-auto" onclick="employeeToWorkPage()"></i>
+            </div>
+            <div class="col-sm-12 text-center mt-1">
+                <p class="lead text-dark" style="font-size: 14px">
+                    2019
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <p class="lead pl-3 pr-3 text-dark" style="text-align: justify; font-family: system-ui;font-size: 15px;font-weight: 400">This Javascript number guessing game was fun to build. In this
+                game where the user must guess a four digit randomly generated number correctly in between the given range.You can visit it
+                <a href="https://anand1109.github.io/Javascript-Number-Guess-Game/" style="border-bottom: 3px solid rgb(29,155,114)">here.</a>
+            </p>
+            <h6 class="pl-3 pr-3" style="text-align: justify; font-family: system-ui;font-size: 14px;font-weight: 400">Technology stacks : HTML5, CSS3, Bootstrap4 & Javascript </h6>
+        </div>
+    </div>
+
+
+
+    <!-------------------portfolio-project-subfolder-page---------------->
+    <div class="container6" style="display: none">
+        <div class="row ">
+            <div class="col-sm-12 text-center">
+                <h1 class="display-6 mt-1 PortfolioHeader mb-0">
+                   Portfolio
+                </h1>
+                <i class="fa fa-arrow-left m-auto" onclick="portfolioToWorkPage()"></i>
+            </div>
+            <div class="col-sm-12 text-center mt-1">
+                <p class="lead">
+                    2019
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <p class="lead pl-3 pr-3">A window-styled, multi-theming portfolio
+                What you are viewing right now is my widows style portfolio. The core design is inspired by Microsoft's Windows. Feel free to check out the source code I made publicly available on Github, and do not hesitate to put a star if you like it.
+            </p>
+            <h6 class="pl-3">Technology stacks : HTML5 & CSS3 </h6>
+        </div>
+    </div>
+
+
+</div>
+
+
 
 
 <!--------------------------------Skill-Page-------------------------------->
 
-<div id="Skill-Page">
+<div id="Skill-Page" class="animated zoomIn" style="display: none">
     <!-----------------heading-1----------->
     <div class="SkillIndexHeader">
         <h1 class="clasicSkillHeader">Skills</h1>
-        <div class="Skill-header mt-0">
+        <div class="Skill-header">
             <h1 class="pt-1">Skills</h1>
-            <a href="#parent-div" class="switch-to-home"></a>
+            <a href="#parent-div" class="switch-to-home" onclick="skillToHome()"></a>
         </div>
+        <i class="fas fa-times closeIcon3" onclick="skillToHome()"></i>
+        <a href="#parent-div" class="skillflatswitch-to-home" onclick="skillToHome()"></a>
     </div>
     <!------------heading-2--------->
-    <div class="row mt-5">
+    <div class="row mt-0 pb-2">
         <div class="col-md-12 col-sm-12 text-center mt-5">
-            <h5 class="display-5 webHeaderh5Tag">Web Development</h5>
+            <h5 class="display-5 webHeaderh5Tag mt-4">Web Development</h5>
         </div>
     </div>
     
@@ -158,30 +382,38 @@
     <div class="row ml-2 mr-2 mt-4">
     <div class="col-sm-4 col-md-4 mt-4">
         <img src="assets/html5.png" class="htmlImg" alt="">
+        <img src="assets/html5classic.png" class="htmlclassicimg" alt="">
     </div>
     <div class="col-sm-4  col-md-4 mt-4">
         <img src="assets/css3.png" class="cssImg" alt="">
+        <img src="assets/css3classic.png" class="cssclassicimg" alt="">
     </div>
     <div class="col-sm-4 col-md-4 mt-4">
         <img src="assets/bootstrap4.jpeg" class="bootstrapImg" alt="">
+        <img src="assets/boots4classic.png" class="bootsclassicimg" alt="">
     </div>
 </div>
 
     <!-----------row-2---------->
     <div class="row ml-2 mr-2 mt-4">
         <div class="col-sm-4 col-md-4 mt-3">
-            <img src="assets/html5.png" class="htmlImg" alt="">
+            <img src="assets/ES5classic.png" class="ES5classic animated rotateIn" alt="">
+            <img src="assets/ES5neu.png" class="ES5neu animated rotateIn" alt="">
         </div>
         <div class="col-sm-4  col-md-4 mt-4">
-            <img src="assets/css3.png" class="cssImg" alt="">
+            <img src="assets/ES6classic.png" class="ES6classic animated rotateIn" alt="">
+            <img src="assets/ES6neu.png" class="ES6neu animated rotateIn" alt="">
+            <img src="assets/ES6neu1.png" class="ES6neu1 animated rotateIn" alt="">
         </div>
         <div class="col-sm-4 col-md-4 mt-4">
-            <img src="assets/bootstrap4.jpeg" class="bootstrapImg" alt="">
+            <img src="assets/reactimgclassic.png" class="reactclassic animated rotateIn" alt="">
+            <img src="assets/reactimgneu.png" class="reactimgneu animated rotateIn" alt="">
         </div>
     </div>
 
 
     <!--------------------heading-3----------->
+    <div class="flatBg pb-5">
     <div class="row mt-5">
         <div class="col-md-12 col-sm-12 text-center mt-4">
             <h5 class="display-5 webHeaderh5Tag">Tools</h5>
@@ -190,29 +422,41 @@
 
 
     <!-----------row-3---------->
-    <div class="row ml-2 mr-2 mt-4 mb-5">
+
+    <div class="row ml-2 mr-2 mt-4 mb-4">
         <div class="col-sm-4 col-md-4 mt-4">
-            <img src="assets/html5.png" class="htmlImg" alt="">
+            <img src="assets/gitbashclassic.png" class="gitbashclassic animated rotateIn" alt="">
+            <img src="assets/gitbashneu.png" class="gitbashneu animated rotateIn" alt="">
         </div>
         <div class="col-sm-4  col-md-4 mt-4">
-            <img src="assets/css3.png" class="cssImg" alt="">
+            <img src="assets/npmclassic.png" class="npmclassic animated rotateIn" alt="">
+            <img src="assets/npmneu.png" class="npmneu animated rotateIn" alt="">
         </div>
         <div class="col-sm-4 col-md-4 mt-4">
-            <img src="assets/bootstrap4.jpeg" class="bootstrapImg" alt="">
+            <img src="assets/webstormclassic.png" class="webstormclassic animated rotateIn" alt="">
+            <img src="assets/webstormneu.jpeg" class="webstormneu animated rotateIn" alt="">
+            <img src="assets/webstormflat.png" class="webstormflat animated rotateIn" alt="">
+            <img src="assets/webstormneu1.png" class="webstormneu1 animated rotateIn" alt="">
         </div>
     </div>
 
     <!-----------row-4---------->
-    <div class="row ml-2 mr-2 mt-1">
+    <div class="row ml-2 mr-2 mt-1 mb-2">
+        <div class="col-sm-4 col-md-4 mt-4 ">
+            <img src="assets/githubclassic.png" class="githubclassic animated rotateIn" alt="">
+            <img src="assets/githubneu.png" class="githubneu animated rotateIn" alt="">
+        </div>
+        <div class="col-sm-4  col-md-4 mt-4 ">
+            <img src="assets/msoffceclassic.jpg" class="msoffceclassic animated rotateIn" alt="">
+            <img src="assets/msofficeneu.jpeg" class="msofficeneu animated rotateIn" alt="">
+        </div>
         <div class="col-sm-4 col-md-4 mt-4">
-            <img src="assets/html5.png" class="htmlImg" alt="">
+            <img src="assets/vscodeClassic.jpg" class="vscodeClassic animated rotateIn" alt="">
+            <img src="assets/vscodenue.jpeg" class="vscodenue animated rotateIn" alt="">
+            <img src="assets/vscodeflat.jpg" class="vscodeflat animated rotateIn" alt="">
+            <img src="assets/vscodenue1.jpg" class="vscodenue1 animated rotateIn" alt="">
         </div>
-        <div class="col-sm-4  col-md-4 mt-4">
-            <img src="assets/css3.png" class="cssImg" alt="">
-        </div>
-        <div class="col-sm-4 col-md-4 mt-4">
-            <img src="assets/bootstrap4.jpeg" class="bootstrapImg" alt="">
-        </div>
+    </div>
     </div>
 
 
@@ -220,27 +464,31 @@
 
 <!--------------------------------Learning-page------------------------------>
 
-<div id="learning">
+<div id="learning" class="animated zoomIn" style="display: none">
     <div class="learningIndexHeader">
         <h1 class="clasicTheme">Learning</h1>
         <div class="Learning-header mt-0">
             <h1 class="pt-1">Learning</h1>
-            <a href="#parent-div" class="Learnswitch-to-home"></a>
+            <a href="#parent-div" class="Learnswitch-to-home" onclick="hideShow()"></a>
         </div>
+        <a href="#parent-div" class="LearnFlat-to-home" onclick="hideShow()"></a>
+        <i class="fas fa-times closeIcon4" onclick="hideShow()"></i>
     </div>
 
 
-    <div class="grid-container mt-5">
-        <div class="Learning-grid-list1">
+    <div class="grid-container mt-0">
+        <div class="Learning-grid-list1 animated fadeInRight">
             <i class="fas fa-user-graduate circle"></i>
             <h5 class="vr-line1"></h5>
             <i class="fa fa-certificate certCircle" aria-hidden="true"></i>
             <h5 class="vr-line2"></h5>
             <i class="fa fa-laptop lapCircle" aria-hidden="true"></i>
             <h5 class="vr-line3"></h5>
+            <i class="fas fa-briefcase brfCircle"></i>
+            <h5 class="vr-line4"></h5>
 
         </div>
-        <div class="Learning-grid-list2">
+        <div class="Learning-grid-list2 animated fadeInRight">
             <h5 class="session-16-20">2016-2020</h5>
             <h2 class="degree-name">Computer Science <br> Engineering</h2>
             <h2 class="college-name">A.K.T.U</h2>
@@ -266,10 +514,15 @@
 
 <!----------------------------------footer-------------------------------------------->
 <footer>
+    <div class="socialIcon1 fab fa-linkedin-in pt-1 text-center"></div>
+    <div class="socialIcon2 fab fa-github pt-1 text-center"></div>
+    <div class="socialIcon3 fab fa-linkedin-in pt-1 text-center"></div>
+    <div class="socialIcon4 fas fa-envelope pt-1 text-center"></div>
+    <div class="socialIcon5 fa fa-envelope pt-1 text-center "></div>
     <div class="row side-row pb-5" style="transform: translate(-16rem)">
         <div class="col-md-12 col-md-12">
             <div class="card side-card pt-1 ">
-                <img  src="assets/theme-flat.jpeg" height="80px" width="120px" style="margin: auto" class="text-center flatTheme" alt="">
+                <img  src="assets/theme-flat.jpeg" height="80px" width="120px" style="margin: auto" class="text-center flatTheme" onclick="flatTheme()" alt="">
                 <img src="assets/neumorph-img1.jpeg" height="80px" width="120px" style="margin: auto" class="text-center pt-1 neumorphismTheme" onclick="neomorphismMode()" alt="">
                 <img src="assets/theme-clasic.jpeg" height="80px" width="120px" style="margin: auto" class="text-center pt-1 classicTheme" onclick="clssicMode()" alt="">
                 <div class="card-body"></div>
@@ -277,7 +530,9 @@
         </div>
     </div>
 
-    <img class="ml-3 mt-2 rotation-btn" src="assets/settingMove.png" style="transform: rotate(0deg);transition: all 1s ease-in; height:3rem; width:3rem;  border-radius: 50%"onclick="rotation()" alt="">
+    <img class="ml-3 rotation-btn" src="assets/settingMove.png" style="transform: rotate(0deg);transition: all 1s ease-in; height:3rem; width:3rem;  border-radius: 50%"onclick="rotation()" alt="">
+    <div> <h2 class="footerh2Tag"> About Me</h2>
+    </div>
 </footer>
 
 
@@ -289,5 +544,8 @@
 <script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/mdb.min.js"></script>
+<script>
+    clssicMode();
+</script>
 </body>
 </html>
