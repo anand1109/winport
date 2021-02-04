@@ -155,7 +155,6 @@ function neomorphismMode() {
     footerh2Tag.style.padding = '10px';
     footerh2Tag.style.color = 'white';
     footerh2Tag.style.fontSize = 'lighter';
-    footerh2Tag.style.position = 'fixed';
     footerh2Tag.style.textAlign = 'center';
     footerh2Tag.style.backgroundColor = 'seagreen';
     footerh2Tag.style.border = '3px solid seagreen';
