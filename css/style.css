@@ -9,7 +9,7 @@
     font-size: 18px;
     padding: 10px;
     color: white;
-    position: fixed;
+    position: relative;
     text-align: center;
     background-color: seagreen;
     margin-left: 70px;
