@@ -20,7 +20,7 @@
     display: none;
 }
 
-.socialIcon1{
+/*.socialIcon1{
     position: fixed;
     height: 26px;
     width: 26px;
@@ -68,7 +68,7 @@
     margin-top: -176px;
     background: black;
     right: 10px
-}
+}*/
 .content{
     background-color:rgb(122,194,185);
 }
@@ -259,7 +259,7 @@ li{
 }
 .fa-arrow-left{
     position: absolute;
-    top: 11px;
+    top: 9px;
     right: 15px;
     font-size: 25px;
 
