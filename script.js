@@ -868,6 +868,8 @@ function clssicMode() {
     let aboutToHome = document.querySelector('.about-to-home');
     let aboutImg = document.querySelector('.about-img');
     let closeIcon = document.querySelector('.fa-times');
+    let flataboutToHome = document.querySelector('.flatabout-to-home')
+  
 
     aboutBody.style.backgroundColor = 'rgb(144,214,205)';
     aboutFlatBg.style.backgroundColor = 'rgb(144,214,205)';
@@ -887,6 +889,7 @@ function clssicMode() {
 
     aboutImg.style.border = '10px solid rgb(144,214,205)';
     aboutImg.style.boxShadow =  'black 1px 1px 0px 2px';
+    flataboutToHome.style.display = 'none';
 
 
 
