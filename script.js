@@ -17,11 +17,11 @@ function rotation() {
 
 
 /*-------------------social-icon-------*/
-let socialIcon1 = document.querySelector('.socialIcon1');
+/*let socialIcon1 = document.querySelector('.socialIcon1');
 let socialIcon2 = document.querySelector('.socialIcon2');
 let socialIcon3 = document.querySelector('.socialIcon3');
 let socialIcon4 = document.querySelector('.socialIcon4');
-let socialIcon5 = document.querySelector('.socialIcon5');
+let socialIcon5 = document.querySelector('.socialIcon5');*/
 
 /*------------------------neomorphism-mode---------------------------------------*/
 let bootsclassicImg = document.querySelector('.bootsclassicimg');
@@ -590,7 +590,7 @@ function neomorphismMode() {
     sessionFuture.style.backgroundColor = 'whitesmoke';
     sessionFuture.style.boxShadow = 'rgb(255, 255, 255) 2px 2px 10px inset, rgba(0, 66, 115, 0.125) -4px -1px 4px inset';
 
-    socialIcon1.style.backgroundColor = 'whitesmoke';
+   /* socialIcon1.style.backgroundColor = 'whitesmoke';
     socialIcon2.style.backgroundColor = 'whitesmoke';
     socialIcon3.style.backgroundColor = 'whitesmoke';
     socialIcon4.style.backgroundColor = 'whitesmoke';
@@ -606,7 +606,7 @@ function neomorphismMode() {
     socialIcon2.style.border = '0px ';
     socialIcon3.style.border = '0px';
     socialIcon4.style.border = '0px';
-    socialIcon5.style.border = '0px';
+    socialIcon5.style.border = '0px';*/
 
 }
 
@@ -868,11 +868,12 @@ function clssicMode() {
     let aboutToHome = document.querySelector('.about-to-home');
     let aboutImg = document.querySelector('.about-img');
     let closeIcon = document.querySelector('.fa-times');
-    let flataboutToHome = document.querySelector('.flatabout-to-home')
-  
+    let flataboutToHome = document.querySelector('.flatabout-to-home');
 
     aboutBody.style.backgroundColor = 'rgb(144,214,205)';
     aboutFlatBg.style.backgroundColor = 'rgb(144,214,205)';
+
+    flataboutToHome.style.display = 'none';
 
     AboutHeader.style.display = 'none';
 
@@ -889,7 +890,6 @@ function clssicMode() {
 
     aboutImg.style.border = '10px solid rgb(144,214,205)';
     aboutImg.style.boxShadow =  'black 1px 1px 0px 2px';
-    flataboutToHome.style.display = 'none';
 
 
 
@@ -1035,8 +1035,6 @@ function clssicMode() {
 
     vrLine4.style.backgroundColor = 'black';
     vrLine4.style.border = '2px solid black';
-     
-    LearnFlatTohome.style.display = 'none';
 
     session2k16.style.borderRadius = '0px';
     session2k16.style.border = '1px solid black';
@@ -1055,13 +1053,14 @@ function clssicMode() {
     sessionk20.style.backgroundColor = 'rgb(144,214,205)';
     sessionk20.style.boxShadow = 'none';
 
+
     sessionFuture.style.borderRadius = '0px';
     sessionFuture.style.border = '1px solid black';
     sessionFuture.style.backgroundColor = 'rgb(144,214,205)';
     sessionFuture.style.boxShadow = 'none';
 
     /*------------social-icon-----*/
-    socialIcon1.style.backgroundColor = 'rgb(122,194,185)';
+   /* socialIcon1.style.backgroundColor = 'rgb(122,194,185)';
     socialIcon2.style.backgroundColor = 'rgb(122,194,185)';
     socialIcon3.style.backgroundColor = 'rgb(122,194,185)';
     socialIcon4.style.backgroundColor = 'rgb(122,194,185)';
@@ -1071,7 +1070,7 @@ function clssicMode() {
     socialIcon2.style.border = '3px solid black';
     socialIcon3.style.border = '3px solid black';
     socialIcon4.style.border = '3px solid black';
-    socialIcon5.style.border = '3px solid black';
+    socialIcon5.style.border = '3px solid black';*/
 
 }
 
@@ -1546,7 +1545,7 @@ function flatTheme(){
     sessionFuture.style.boxShadow = 'none';
 
 
-    socialIcon1.style.backgroundColor = 'rgb(26, 188, 156)';
+   /* socialIcon1.style.backgroundColor = 'rgb(26, 188, 156)';
     socialIcon2.style.backgroundColor = 'rgb(26, 188, 156)';
     socialIcon3.style.backgroundColor = 'rgb(26, 188, 156)';
     socialIcon4.style.backgroundColor = 'rgb(26, 188, 156)';
@@ -1556,7 +1555,7 @@ function flatTheme(){
     socialIcon2.style.border = '3px solid black';
     socialIcon3.style.border = '3px solid black';
     socialIcon4.style.border = '3px solid black';
-    socialIcon5.style.border = '3px solid black';
+    socialIcon5.style.border = '3px solid black';*/
 
 }
 
