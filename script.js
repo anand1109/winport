@@ -1032,6 +1032,8 @@ function clssicMode() {
 
     vrLine4.style.backgroundColor = 'black';
     vrLine4.style.border = '2px solid black';
+     
+    LearnFlatTohome.style.display = 'none';
 
     session2k16.style.borderRadius = '0px';
     session2k16.style.border = '1px solid black';
@@ -1049,7 +1051,6 @@ function clssicMode() {
     sessionk20.style.border = '1px solid black';
     sessionk20.style.backgroundColor = 'rgb(144,214,205)';
     sessionk20.style.boxShadow = 'none';
-
 
     sessionFuture.style.borderRadius = '0px';
     sessionFuture.style.border = '1px solid black';
